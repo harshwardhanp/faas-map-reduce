@@ -9,7 +9,7 @@ $(function () {
         key = key.toLowerCase();
         var searchres = "We found " + key + " in";
         var a = key;
-        $.getJSON("reducer_output.json",
+        $.getJSON("https://storage.googleapis.com/faas-output/reducer_output.json",
             function (data) {
                 var student = '';
                 // ITERATING THROUGH OBJECTS
